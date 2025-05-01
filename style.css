@@ -1,12 +1,16 @@
+
 body {
-    background: linear-gradient(to bottom right, white, cyan,rgb(224, 227, 124));
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
+    background-position: center;
+    height: 375vh;
+    color: #003366; /* dark blue text */
 }
-
-
 .container {
     padding: 40px;
 }
@@ -89,15 +93,4 @@ h1 {
     line-height: 30px;
     border-radius: 5px;
     margin-top: 5px;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 375vh;
-    color: #003366; /* dark blue text */
 }
