@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthCheckSystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>SKY HealthCheckSystem</h1>
+        <div class="description">
+            <p><strong style="color:blue;">Welcome to SKY Health Check System</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);">At SKY, user well-being is a top priority.</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);">Our Health Check Web Application is designed to support holistic approach to health</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);">monitoring across the organization.</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);">This platform / web application allows engenieers to easily track their health cards,</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);">access personalized wellness insights, and stay informed about their overall health status.</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);"> Whether you're managing regular healthcare assessments, reviewing personal health score,</strong></p>
+            <p><strong style="color:rgb(0, 200, 255);"> or accessing corporate wellness resources, the SKY Health Check System ensures secure,</strong></p>  
+            <p><strong style="color:rgb(0, 200, 255);"> user-friendly, and efficient health management anytime, anywhere.</strong></p>
+        </div>
+        <div class="role-rectangle">
+            <button style="color: blueviolet;" onclick="location.href='empty.html'">Engineers</button>
+            <button style="color: blueviolet;" onclick="location.href='empty.html'">Team Leaders</button>
+            <button style="color: blueviolet;" onclick="location.href='empty.html'">Department Leaders</button>
+            <button style="color: blueviolet;"onclick="location.href='empty.html'">Senior Managers</button>
+            <button style="color: blueviolet;"onclick="location.href='empty.html''">Administrator</button>
+
+        </div>
+
+        <h2 class="vote-question">Please vote for a specific health card to get your score</h2>
+        <div class="vote-buttons">
+            <button style="color: green;" onclick="showResponse('Good')">Green</button>
+            <button style="color: red;" onclick="showResponse('Bad')">Red</button>
+            <button style="color: orange;" onclick="showResponse('Average')">Amber</button>
+        </div>
+        <div class="response-box" id="responseText"></div>
+
+        <div id="response" class="response-message"></div>
+    <button class="review-button" style="color: lab(34.05% 79.8 -104.9);" onclick="location.href='dashboard.html'">
+      Please click here to review your score and track your progress
+    </button>
+    </div>
+
+    <script>
+        function showResponse(text) {
+            document.getElementById('responseText').innerText = text;
+        }
+        function vote(response) {
+            document.getElementById('response').innerText = response;}
+    </script>
+</body>
+</html>
+
